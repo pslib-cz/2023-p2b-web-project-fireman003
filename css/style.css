@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./../assets/_9333992f-6376-43ee-8661-d7691e0ca770.jpg');
+}
+
+header {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav menu {
+    list-style: none;
+}
+
+header nav menu li {
+    display: inline;
+    padding: 10px;
+}       
+
+header nav menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav menu li a:hover {
+    color: red;
+}
+
+header nav menu li img {
+    aspect-ratio: 1/1;
+    width: 3em;
+}
+
+.setContentInMidle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentContanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 50px;
+    background-color: white;
+    border: white solid 1px;
+    border-radius: 25px;
+    max-height: fit-content;
+    width: 60%;
+}
+
+.ContentContanier hr {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.Content img {
+    aspect-ratio: 1/1;
+    width: 20em;
+    border-radius: 25px;
+}
+
+.Card--contanier {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    aspect-ratio: 1/1;
+    width: 10em;
+    border-radius: 50%;
+}
+
+.RegistrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px; 
+    margin: 25px;
+    border-radius: 25px;
+    width: 60%;
+
+}
+
+.RegistrationForm label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.RegistrationForm input {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.RegistrationForm button {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    list-style: none;
+    padding: 10px;
+    margin-top: auto; 
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/MediaQuery.css">
+    <link rel="stylesheet" href="./../css/Gallery.css">
+    <link rel="icon" href="./../assets/Logo.png" type="image/x-icon">
+
+    <link type="text/css" rel="stylesheet" href="./../node_modules/lightgallery/css/lightgallery-bundle.css" />
+
+    <title>Hry - Fire-Studio </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <menu>
+                <li><a href="./../index.html">Domů</a></li>
+                <li><a href="./Software.html">Hry</a></li>
+                <li><a href="./Turnaj2024.html">Turnaj</a></li>
+            </menu>
+            <menu>
+                <li><img src="./../assets/Logo.png" alt="Logo"></li>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <div class="setContentInMidle">
+            <div class="ContentContanier">
+                <h1>Fire-Studio</h1>
+                <h2>Přihlas se do turnaje</h2>
+                <hr>
+                <form action="" class="RegistrationForm">
+                    <label for="email">Zadejte email:</label>
+                    <input type="text" name="email">
+
+                    <label for="name">Zadejte jméno:</label>
+                    <input type="text" name="name">
+
+                    <label for="surname">Zadejte příjmení:</label>
+                    <input type="text" name="surname">
+
+                    <label for="phone">Zadejte telefon:</label>
+                    <input type="text" name="phone">
+
+                    <label for="game">Vyberte hru:</label>
+                    <select name="game" id="game">
+                        <option value="Karty">Karetni hry</option>
+                        <option value="DandD">D&D</option>
+                        <option value="Strategie">Strategické hry</option>
+                    </select>
+
+                    <button type="submit" value="Odeslat">Odeslat</button>
+                </form>
+                <hr>
+                <h2>Koukněte na fotky z minuleho roku</h2>
+                <hr>
+                <div class="gallery" id="lightgallery">
+                    <figure class="gallery__item gallery__item--1">
+                      <img src="../assets/gallery/_26b73e40-fabe-4d1b-84cc-34a2a9af199c.jpg" class="gallery__img" alt="Image 1">
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                      <img src="../assets/gallery/_2db185a9-3c65-4049-b436-47c8e9aea636.jpg" class="gallery__img" alt="Image 2">
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                      <img src="../assets/gallery/_68358a09-0d18-4f5f-bfb4-9c5416d7935e.jpg" class="gallery__img" alt="Image 3">
+                    </figure>
+                    <figure class="gallery__item gallery__item--4">
+                      <img src="../assets/gallery/_9ecffc9c-d239-4e26-8c20-3e1b122c3843.jpg" class="gallery__img" alt="Image 4">
+                    </figure>
+                    <figure class="gallery__item gallery__item--5">
+                      <img src="../assets/gallery/_eb160e24-530d-4215-918d-1ab7bb487adc.jpg" class="gallery__img" alt="Image 5">
+                    </figure>
+                    <figure class="gallery__item gallery__item--6">
+                      <img src="../assets/_7d0f45e6-f72b-4fa9-880f-45b4fc34c5e9.jpg" class="gallery__img" alt="Image 6">
+                    </figure>
+                  </div>
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <p><strong>Contact:</strong></p>
+        <ul>
+            <li>Email: marek.havel.022@pslib.cz</li>
+            <li>Telefon: +420 732 630 113</li>
+        </ul>
+    </footer>
+
+    <script src="./../node_modules/lightgallery/js/lightgallery.umd.js"></script>
+
+    <script src="./../node_modules/lightgallery/js/plugins/lg-thumbnail.umd.js"></script>
+    <script src="./../node_modules/lightgallery/js/plugins/lg-zoom.umd.js"></script>
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail],
+            licenseKey: 'your_license_key',
+            speed: 500,
+            // ... other settings
+        });
+    </script>
+    
+
+</body>
+</html>
