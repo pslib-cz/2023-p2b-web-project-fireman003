@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./../css/MediaQuery.css">
     <link rel="stylesheet" href="./../css/Gallery.css">
     <link rel="icon" href="./../assets/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+
 
     <title>Hry - Fire-Studio </title>
 </head>
@@ -20,13 +22,13 @@
                 <li><a href="./Turnaj2024.html">Turnaj</a></li>
             </menu>
             <menu>
-                <li><img src="./../assets/Logo.png" alt="Logo"></li>
+                <li><img src="../assets/Logo.png" alt="Logo"></li>
             </menu>
         </nav>
     </header>
     <main>
-        <div class="setContentInMidle">
-            <div class="ContentContanier">
+        <div class="Content--wrapper">
+            <div class="Content--contanier">
                 <h1>Fire-Studio</h1>
                 <h2>Přihlas se do turnaje</h2>
                 <hr>
@@ -55,24 +57,37 @@
                 <hr>
                 <h2>Koukněte na fotky z minuleho roku</h2>
                 <hr>
-                <div class="gallery" id="lightgallery">
+                <div class="thumbnails gallery" id="gallery">
                     <figure class="gallery__item gallery__item--1">
+                      <a href="../assets/gallery/_26b73e40-fabe-4d1b-84cc-34a2a9af199c.jpg">
                       <img src="../assets/gallery/_26b73e40-fabe-4d1b-84cc-34a2a9af199c.jpg" class="gallery__img" alt="Image 1">
+                      </a>
                     </figure>
                     <figure class="gallery__item gallery__item--2">
-                      <img src="../assets/gallery/_2db185a9-3c65-4049-b436-47c8e9aea636.jpg" class="gallery__img" alt="Image 2">
+                      <a href="../assets/gallery/_2db185a9-3c65-4049-b436-47c8e9aea636.jpg">
+                        <img src="../assets/gallery/_2db185a9-3c65-4049-b436-47c8e9aea636.jpg" class="gallery__img" alt="Image 2">
+                      </a>
                     </figure>
                     <figure class="gallery__item gallery__item--3">
-                      <img src="../assets/gallery/_68358a09-0d18-4f5f-bfb4-9c5416d7935e.jpg" class="gallery__img" alt="Image 3">
+                      <a href="../assets/gallery/_68358a09-0d18-4f5f-bfb4-9c5416d7935e.jpg">
+                        <img src="../assets/gallery/_68358a09-0d18-4f5f-bfb4-9c5416d7935e.jpg" class="gallery__img" alt="Image 3">
+                      </a>
+          
                     </figure>
                     <figure class="gallery__item gallery__item--4">
+                      <a href="../assets/gallery/_9ecffc9c-d239-4e26-8c20-3e1b122c3843.jpg">
                       <img src="../assets/gallery/_9ecffc9c-d239-4e26-8c20-3e1b122c3843.jpg" class="gallery__img" alt="Image 4">
+                      </a>
                     </figure>
                     <figure class="gallery__item gallery__item--5">
+                      <a href="../assets/gallery/_eb160e24-530d-4215-918d-1ab7bb487adc.jpg">
                       <img src="../assets/gallery/_eb160e24-530d-4215-918d-1ab7bb487adc.jpg" class="gallery__img" alt="Image 5">
+                      </a>
                     </figure>
                     <figure class="gallery__item gallery__item--6">
+                      <a href="../assets/_7d0f45e6-f72b-4fa9-880f-45b4fc34c5e9.jpg">
                       <img src="../assets/_7d0f45e6-f72b-4fa9-880f-45b4fc34c5e9.jpg" class="gallery__img" alt="Image 6">
+                      </a>
                     </figure>
                   </div>
             </div>
@@ -86,5 +101,21 @@
         </ul>
     </footer>   
 
+    <script type="module">
+      import lightgallery from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm'
+      import lgThumbnail from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm'
+      import lgPager from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/pager/+esm'
+      import lgZoom from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm'
+      import lgAutoplay from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm'
+
+      lightgallery(document.querySelector('.thumbnails'), 
+      {
+          selector: document.querySelectorAll('.thumbnails a'),
+          plugins: [lgThumbnail, lgPager, lgZoom, lgAutoplay],
+          slideShowAutoplay: true,
+          slideShowInterval:2000,
+      });
+  </script>
+    
 </body>
 </html>

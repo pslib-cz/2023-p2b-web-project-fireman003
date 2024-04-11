@@ -43,13 +43,13 @@ header nav menu li img {
     width: 3em;
 }
 
-.setContentInMidle {
+.Content--wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ContentContanier {
+.Content--contanier {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@ header nav menu li img {
     width: 60%;
 }
 
-.ContentContanier hr {
+.Content--contanier hr {
     width: 100%;
     border: 2px solid black;
 }
